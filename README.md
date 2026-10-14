@@ -4,7 +4,7 @@
 Projektname: Remote iVentoy Boot USB
 Repository:  remote-iventoy-boot-usb
 Kürzel:      RIBU
-Logo:        RIBU.svg
+Logo:        zu_erstellen_und_integriren
 ISO:         remote-iventoy-boot-usb-amd64.iso
 Buildskript: setup.sh
 ```
@@ -44,7 +44,7 @@ Das veröffentlichte Repository enthält ausschließlich:
 
 ```text
 README.md
-RIBU.svg
+zu_erstellen_und_integriren
 setup.sh
 remote-iventoy-boot-usb-amd64.iso
 ```
@@ -55,7 +55,7 @@ Bedeutung:
 README.md
 -> vollständiges Zielbild, Buildverfahren, Betrieb und Tests
 
-RIBU.svg
+zu_erstellen_und_integriren
 -> Projektlogo für Repository, Bootoberfläche und ISO-Branding
 
 setup.sh
@@ -176,7 +176,7 @@ Auf der Chroot-Terminalseite müssen mindestens diese Dateien erreichbar sein:
 
 ```text
 setup.sh
-RIBU.svg
+zu_erstellen_und_integriren
 ```
 
 Die Dateien werden entweder über einen von Cubic sichtbaren Pfad eingebunden oder vor dem Start in die Chroot kopiert.
@@ -247,7 +247,7 @@ Das Skript prüft:
 - Cubic-Chroot-Merkmale
 - schreibbares Zielrootfs
 - funktionierende DNS- und Paketquellen
-- Vorhandensein von RIBU.svg
+- Vorhandensein von zu_erstellen_und_integriren
 - ausreichend freien Speicher
 ```
 
@@ -353,7 +353,7 @@ Das Skript legt an:
   bin/
   lib/
   ui/
-  assets/RIBU.svg
+  assets/zu_erstellen_und_integriren
 
 /etc/ribu/
   ribu.conf
@@ -436,14 +436,14 @@ Die UI erhält kein allgemeines Rootrecht.
 ### 80 Branding
 
 ```text
-- RIBU.svg nach /opt/ribu/assets/RIBU.svg kopieren
+- zu_erstellen_und_integriren nach /opt/ribu/assets/zu_erstellen_und_integriren kopieren
 - Vollbildoberfläche mit Projektname und Logo versehen
 - Plymouth-Branding auf RIBU setzen
 - Ubuntu-Desktop-Hintergrund und normale Shell nicht anzeigen
 - Bootfehler weiterhin lesbar halten
 ```
 
-Das Logo wird nicht im Skript eingebettet, sondern aus `RIBU.svg` übernommen.
+Das Logo wird nicht im Skript eingebettet, sondern aus `zu_erstellen_und_integriren` übernommen.
 
 ### 90 Bereinigung
 
@@ -476,7 +476,7 @@ Der Build schlägt fehl, wenn mindestens einer dieser Tests fehlschlägt:
 ```text
 NetworkManager vorhanden und aktivierbar
 RIBU-UI vorhanden und ausführbar
-RIBU.svg vorhanden und valides SVG
+zu_erstellen_und_integriren vorhanden und valides SVG
 CA-Zertifikate vorhanden
 WireGuard-Werkzeuge vorhanden
 nftables-Regeln syntaktisch gültig
@@ -659,7 +659,7 @@ Die ISO wird nur ersetzt, wenn:
 ```text
 neue offizielle Ubuntu-LTS-Desktop-amd64-ISO laden
 -> neues Cubic-Projekt anlegen
--> setup.sh und RIBU.svg in die Chroot bringen
+-> setup.sh und zu_erstellen_und_integriren in die Chroot bringen
 -> setup.sh ausführen
 -> Paketänderungen oder Fehler ausschließlich im Skript korrigieren
 -> ISO bauen
