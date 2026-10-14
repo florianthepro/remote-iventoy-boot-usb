@@ -3,7 +3,7 @@
 ## Verbindliche Dateien
 
 - `README.md` definiert das vollständige Zielbild, den Repository-Umfang, den Cubic-Ablauf, den Umfang von `setup.sh` und die Freigabekriterien.
-- `RIBU.svg` ist das unveränderliche Projektlogo.
+- `zu_erstellen_und_integriren` ist das unveränderliche Projektlogo.
 - `remote-iventoy-boot-usb-amd64.iso` ist das veröffentlichte Ergebnis von `setup.sh` und Cubic.
 - Vor jeder Arbeit `README.md` vollständig lesen.
 - Bei Unklarheiten, Widersprüchen oder fehlenden technischen Voraussetzungen nachfragen und nicht spekulieren.
@@ -14,7 +14,7 @@ Das Repository enthält ausschließlich:
 
 ```text
 README.md
-RIBU.svg
+zu_erstellen_und_integriren
 setup.sh
 remote-iventoy-boot-usb-amd64.iso
 ```
@@ -23,7 +23,7 @@ Keine weiteren Dateien oder Verzeichnisse dauerhaft anlegen. Temporäre Arbeitsd
 
 ## Bearbeitungsregeln
 
-- `README.md` und `RIBU.svg` niemals ändern, ersetzen, umbenennen, verschieben oder löschen.
+- `README.md` und `zu_erstellen_und_integriren` niemals ändern, ersetzen, umbenennen, verschieben oder löschen.
 - Ausschließlich `setup.sh` bearbeiten.
 - Die ISO nicht manuell verändern. Änderungen immer in `setup.sh` umsetzen und danach mit einer frischen Ubuntu-LTS-Basis in Cubic neu erzeugen.
 - `remote-iventoy-boot-usb-amd64.iso` nur nach vollständig bestandener Testmatrix ersetzen.
@@ -50,7 +50,7 @@ APT vorbereiten
 benötigte Pakete installieren
 nicht benötigte Pakete kontrolliert entfernen
 RIBU-Anwendung und Vollbildoberfläche erzeugen
-RIBU.svg installieren
+zu_erstellen_und_integriren installieren
 NetworkManager, WLAN und Ethernet einrichten
 WireGuard, TLS-Prüfung und Firewall einrichten
 systemd-Target, Dienste, Benutzer und Polkit konfigurieren
@@ -84,7 +84,7 @@ bash -n setup.sh
 ShellCheck ohne unbegründete Fehler
 Ausführung in einer frischen Cubic-Chroot
 APT-Abhängigkeiten konsistent
-RIBU.svg gültig und im Ziel vorhanden
+zu_erstellen_und_integriren gültig und im Ziel vorhanden
 NetworkManager und WireGuard vorhanden
 nftables-Regeln syntaktisch gültig
 systemd-Units verifizierbar
