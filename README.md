@@ -1,5 +1,5 @@
 > [!CAUTION]
-> disclaimer: Repo Made uder use of AI
+> Disclaimer: This repository was created using AI.
 
 # Remote iVentoy Boot USB
 
